@@ -1,3 +1,7 @@
+import Feather from "@expo/vector-icons/Feather";
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import Octicons from "@expo/vector-icons/Octicons";
 import {
   Alert,
   Image,
@@ -51,7 +55,7 @@ export default function HomeScreen() {
             </View>
             <View style={styles.postHeaderInfo}>
               <Text style={styles.postUsername}>sarah_f19</Text>
-              <Text style={styles.postVia}>via burgey_sauce420</Text>
+              <Text style={styles.postVia}>via boorgir_sauce420</Text>
             </View>
           </View>
           <TouchableOpacity>
@@ -68,24 +72,32 @@ export default function HomeScreen() {
             resizeMode="cover"
           />
         </View>
-        /* Action Icons */
+        {/* Action Icons */}
         <View style={styles.actions}>
           <View style={styles.actionsLeft}>
             <TouchableOpacity style={styles.actionBtn}>
-              <Text style={styles.actionIcon}>♡</Text>
+              <Text style={styles.actionIcon}>
+                <Feather name="heart" size={24} color="black" />
+              </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.actionBtn}>
-              <Text style={styles.actionIcon}>○</Text>
+              <Text style={styles.actionIcon}>
+                <FontAwesome5 name="comment" size={24} color="black" />
+              </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.actionBtn}>
-              <Text style={styles.actionIcon}>➤</Text>
+              <Text style={styles.actionIcon}>
+                <Ionicons name="paper-plane-outline" size={24} color="black" />
+              </Text>
             </TouchableOpacity>
           </View>
           <TouchableOpacity>
-            <Text style={styles.actionIcon}>⬡</Text>
+            <Text style={styles.actionIcon}>
+              <FontAwesome5 name="bookmark" size={24} color="black" />
+            </Text>
           </TouchableOpacity>
         </View>
-        /* Likes */
+        {/* Likes */}
         <View style={styles.likesRow}>
           <View style={styles.miniAvatars}>
             <View
@@ -106,18 +118,18 @@ export default function HomeScreen() {
             <Text style={styles.bold}>7 others</Text>
           </Text>
         </View>
-        /* Caption */
+        {/* Caption */}
         <View style={styles.captionRow}>
           <Text style={styles.captionText}>
-            <Text style={styles.bold}>frenchie_fry39</Text>
+            <Text style={styles.bold}>boorgir_sauce420</Text>
             {"  "}Fresh shot on a sunny day! ☀️
           </Text>
         </View>
-        /* View Comments */
+        {/* View Comments */}
         <TouchableOpacity style={styles.viewComments}>
           <Text style={styles.viewCommentsText}>View all 12 comments</Text>
         </TouchableOpacity>
-        /* Comments */
+        {/* Comments */}
         <View style={styles.commentsSection}>
           <View style={styles.commentRow}>
             <Text style={styles.commentText}>
@@ -132,29 +144,37 @@ export default function HomeScreen() {
             </Text>
           </View>
         </View>
-        /* Timestamp */
+        {/* Timestamp */}
         <Text style={styles.timestamp}>18 hours ago</Text>
         <View style={{ height: 100 }} />
       </ScrollView>
-      /* Bottom Nav */
+      {/* Bottom Nav */}
       <View style={styles.bottomNav}>
         <TouchableOpacity style={styles.navItem}>
-          <Text style={styles.navIcon}>⌂</Text>
+          <Text style={styles.navIcon}>
+            <Feather name="home" size={24} color="black" />
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.navItem}>
-          <Text style={styles.navIcon}>○</Text>
+          <Text style={styles.navIcon}>
+            <Feather name="search" size={24} color="black" />
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.navItem}>
-          <Text style={styles.navIcon}>▣</Text>
+          <Text style={styles.navIcon}>
+            <Octicons name="diff-added" size={24} color="black" />
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.navItem}>
-          <Text style={styles.navIcon}>🛍</Text>
+          <Text style={styles.navIcon}>
+            <Octicons name="video" size={24} color="black" />
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.navItem}>
           <View style={styles.profileNavAvatar} />
         </TouchableOpacity>
       </View>
-      /* Alert Button */
+      {/* Alert Button */}
       <View style={styles.alertBtnWrapper}>
         <TouchableOpacity
           style={styles.alertBtn}
