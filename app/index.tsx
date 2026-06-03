@@ -142,7 +142,7 @@ export default function HomeScreen() {
         </View>
 
         {/* Timestamp */}
-        <Text style={styles.timestamp}>1 day ago</Text>
+        <Text style={styles.timestamp}>18 hours ago</Text>
 
         <View style={{ height: 100 }} />
       </ScrollView>
